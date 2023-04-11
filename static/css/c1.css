@@ -1,0 +1,11 @@
+h1{
+    color: brown;
+}
+td{
+    color: rgb(237, 106, 12);
+    background-color:rgb(209, 181, 20);
+}
+th{
+    color: crimson;
+    background-color: cyan;
+}

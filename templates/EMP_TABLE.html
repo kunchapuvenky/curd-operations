@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMP_TABLE</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        td{
+            color: red;
+            background-color: gold;
+        }
+        th{
+            color: blue;
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <center>
+         <h1>EMP_TABLE</h1>
+         <table border="2px">
+              <tr>
+                 <th>EMPNO</th>
+                 <th>ENAME</th>
+                 <th>JOB</th>
+                 <th>MGR</th>
+                 <th>HIREDATE</th>
+                 <th>SAL</th>
+                 <th>COMM</th>
+                 <th>DEPTNO</th>
+              </tr>
+            {% for T in table %}
+               <tr>
+                  <td>{{T.EMPNO}}</td>
+                  <td>{{T.ENAME}}</td>
+                  <td>{{T.JOB}}</td>
+                  <td>{{T.MGR}}</td>
+                  <td>{{T.HIREDATE}}</td>
+                  <td>{{T.SAL}}</td>
+                  <td>{{T.COMM}}</td>
+                  <td>{{T.DEPTNO}}</td>
+               </tr>
+            {% endfor %}
+         </table>
+    </center>
+</body>
+</html>
